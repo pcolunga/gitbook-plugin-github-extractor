@@ -1,0 +1,17 @@
+{
+    "name": "gitbook-plugin-github-extractor",
+    "version": "0.0.3",
+    "description": "Extract GitHub code examples and expande then on GitBook markdown processing.",
+    "engines": {
+        "gitbook": ">1.x.x"
+    },
+    "gitbook": {
+        "properties": {
+            "token": {
+                "type": "string",
+                "default": "",
+                "description": "Token to be used for private repositories"
+            }
+        }
+    }
+}

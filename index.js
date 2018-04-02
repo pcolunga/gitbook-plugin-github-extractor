@@ -55,12 +55,12 @@ module.exports = {
             return result;
           }
 
-          /* Return example text. Maybe anchored between //!some-identifier */
+          /* Return example text. Maybe anchored between //#some-identifier */
           function contentText(obj) {
             if(isEmpty(obj.anchor)) {
               return obj.text;
             } else {
-              const regex = new RegExp("\\/\\/!"+obj.anchor+"\\s([\\s\\S]*)\\/\\/!"+obj.anchor)
+              const regex = new RegExp("\\/\\/#"+obj.anchor+"\\s([\\s\\S]*)\\/\\/#"+obj.anchor)
               const result = regex.exec(obj.text);
               if(result) {
                 return result[1];

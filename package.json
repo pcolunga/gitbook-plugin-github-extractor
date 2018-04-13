@@ -1,6 +1,6 @@
 {
     "name": "gitbook-plugin-github-extractor",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Extract GitHub code examples and expande then on GitBook markdown processing.",
     "engines": {
         "gitbook": ">1.x.x"

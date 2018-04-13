@@ -87,6 +87,8 @@ module.exports = {
                 const example = result[match]
                 if(isEmpty(example.lang)) {
                   return "```\n" + example.text + "\n```";
+                } else if(example.lang == "raw"){
+                  return "\n" + example.text + "\n";
                 } else {
                   return "```"+example.lang+"\n" + example.text + "\n```";
                 }
